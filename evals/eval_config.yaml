@@ -1,0 +1,34 @@
+# Eval thresholds, keyed by eval name. Loaded by runner.py via --config.
+#
+# Metric names follow the cgm_* standard used by the cgm_metrics tool and by
+# ground_truth.json.
+
+eval_numerical:
+  # Maximum absolute difference between the value stated in the report and the
+  # value the tool computed.
+  #
+  # These are transcription tolerances, not measurement tolerances. The eval
+  # asks whether the model faithfully reported what the tool returned, so the
+  # bar is a rounding epsilon at the precision reports are written in, not a
+  # clinically acceptable error.
+  #
+  # The list is scoped to the metrics the metabolic-health-report skill actually asks
+  # for, all of which cgm_metrics returns as top-level scalars. eA1c, ADRR,
+  # LBGI and HBGI are deliberately absent: they exist only inside the metrics
+  # artifact, the skill never requires them, and thresholding them would fail
+  # every compliant report for omitting something it was never asked to
+  # mention. Extend the skill and this list together, or neither.
+  thresholds:
+    cgm_mean: 0.05             # mg/dL
+    cgm_cv: 0.05               # %
+    cgm_in_range_70_180: 0.05  # %
+    cgm_gmi: 0.05              # %
+
+eval_groundedness_llm:
+  pass_threshold: 0.95   # fraction of event claims that must be grounded
+
+eval_critical_cgm_metrics:
+  mandatory_metrics:
+    - cgm_mean
+    - cgm_cv
+    - cgm_in_range_70_180

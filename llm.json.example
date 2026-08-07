@@ -1,0 +1,18 @@
+{
+  "_comment": [
+    "Model configuration. Copy to llm.json (which is gitignored) and edit.",
+    "The paper generated its 210-report matrix with Claude Opus 4.6 on Amazon",
+    "Bedrock; its three LLM-as-judge evals used Claude Sonnet 4.5. The tier",
+    "strings below reach Opus 4.6 through the Anthropic API. Alternatives, as",
+    "documented in the paper's Supplementary S5:",
+    "  Bedrock:    bedrock/eu.anthropic.claude-opus-4-6-v1",
+    "  OpenRouter: openrouter/anthropic/claude-opus-4.6",
+    "Any LiteLLM-supported provider works. Model identifiers change over time,",
+    "so if a call 404s, update the tier strings here rather than the code."
+  ],
+  "tiers": {
+    "HIGH": "anthropic/claude-opus-4-6",
+    "MID": "anthropic/claude-opus-4-6",
+    "LOW": "anthropic/claude-haiku-4-5"
+  }
+}

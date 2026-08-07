@@ -1,0 +1,1 @@
+Using my glucose sensor data and diet logs, tell me: which meals are hurting me most, where my metabolic markers put me relative to my peers, and what my cardiovascular risk is. Short answer — just the actionable stuff.

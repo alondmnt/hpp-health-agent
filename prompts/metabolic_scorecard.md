@@ -1,0 +1,1 @@
+Based on my data, give me a quick metabolic scorecard: grade each key area (glucose health, metabolic risk, cardiovascular risk), tell me exactly where I stand compared to people my age and sex, and give me the 2 most important things to change. Keep it to half a page — I want signal, not a report.
