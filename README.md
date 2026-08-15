@@ -148,7 +148,8 @@ If you use this code, please cite the paper it accompanies:
 > Etzion-Fuchs A, Gelbard Solodkin D, Talmor-Barkan Y, Lutsker G, Segal E,
 > Rossman H.
 > *Grounding Health AI: Architecture and Evaluation of a Domain-Expert
-> Metabolic Health Agent.* medRxiv, 2026. DOI: to be added on release.
+> Metabolic Health Agent.* medRxiv, 2026.
+> https://doi.org/10.64898/2026.08.11.26359946
 >
 > \* Equal contribution.
 
@@ -163,7 +164,8 @@ If you use this code, please cite the paper it accompanies:
              Rossman, Hagai},
   journal = {medRxiv},
   year    = {2026},
-  note    = {Preprint. DOI to be added on release.}
+  doi     = {10.64898/2026.08.11.26359946},
+  url     = {https://doi.org/10.64898/2026.08.11.26359946}
 }
 ```
 
